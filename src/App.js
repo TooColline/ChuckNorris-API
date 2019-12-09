@@ -1,10 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { HashRouter, Route } from "react-router-dom";
+import configStore from "./store";
 
 import Container from "./components/main";
 
-import store from "./store";
+const store = configStore();
 
 function App() {
   return (

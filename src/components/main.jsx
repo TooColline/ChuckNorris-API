@@ -1,10 +1,14 @@
 import React from "react";
+
+import NavBar from "./navbar";
+import Categories from "./categories";
 import "../App.css";
 
 const mainContainer = () => {
   return (
     <div className="Container">
-      <h1>This is a work in progress</h1>
+      <NavBar />
+      {/* <Categories /> */}
     </div>
   );
 };

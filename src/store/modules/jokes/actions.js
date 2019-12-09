@@ -1,16 +1,16 @@
 import types from "./types";
 
-export const loadJoke = () => ({
+export const loadJoke = category => ({
   type: types.LOAD_JOKE,
   payload: category
 });
 
-export const setJoke = () => ({
+export const setJoke = joke => ({
   type: types.LOAD_JOKE_SUCCESS,
   payload: joke
 });
 
-export const setJokeError = () => ({
+export const setJokeError = error => ({
   type: types.LOAD_JOKE_FAIL,
   payload: error
 });
