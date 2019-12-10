@@ -18,7 +18,6 @@ export const loadCategoriesReducer = (state = false, action) => {
     case types.LOAD_CATEGORIES:
       return true;
     case types.LOAD_CATEGORIES_SUCCESS:
-      return false;
     case types.LOAD_CATEGORIES_FAIL:
       return false;
     default:
@@ -31,7 +30,6 @@ export const setErrorCategoryReducer = (state = null, action) => {
     case types.LOAD_CATEGORIES_FAIL:
       return action.payload;
     case types.LOAD_CATEGORIES:
-      return null;
     case types.LOAD_CATEGORIES_SUCCESS:
       return null;
     default:

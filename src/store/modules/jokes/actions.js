@@ -14,3 +14,8 @@ export const setJokeError = error => ({
   type: types.LOAD_JOKE_FAIL,
   payload: error
 });
+
+export const resetJoke = joke => ({
+  type: types.RESET_JOKE,
+  payload: joke
+});
